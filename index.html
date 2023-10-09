@@ -162,7 +162,7 @@
 
       @media screen and (max-width: 576px) {
         .welcome h1 {
-          font-size: 45px !important;
+          font-size: 40px !important;
         }
         .about-p-img .about-p p {
           width: 450px;
@@ -174,7 +174,7 @@
           width: 585px;
         }
         .welcome h1 {
-          font-size: 30px !important;
+          font-size: 26px !important;
         }
 
         .about-us .about-p-img .about-p p {
@@ -186,6 +186,7 @@
 
         .about-p-img .about-img img {
           width: 250px;
+          height: 250px;
         }
 
         .foto1 {
@@ -226,7 +227,7 @@
         }
 
         .welcome h1 {
-          font-size: 30px !important;
+          font-size: 26px !important;
         }
 
         .about-us .about-p-img .about-p p {
@@ -236,15 +237,25 @@
         .overlay {
           left: 53px;
         }
+
+        .about-p-img .about-img img {
+          width: 250px;
+          height: 250px;
+        }
       }
 
       @media screen and (max-width: 320px) {
-        .welcome h1 {
-          font-size: 26px !important;
+        .come .welcome h1 {
+          font-size: 24px !important;
         }
         .about-us .about-p-img .about-p p {
           font-size: 12px;
           width: 250px;
+        }
+
+        .about-p-img .about-img img {
+          width: 250px;
+          height: 250px;
         }
       }
 
@@ -295,6 +306,16 @@
         height: 100%;
         background-color: rgba(255, 144, 0, 0.9);
       }
+
+      #fh5co-footer {
+        padding: 50px 0;
+        float: left;
+        width: 100%;
+        background-color: rgba(255, 144, 0, 0.9);
+      }
+      #fh5co-footer p:last-child {
+        margin-bottom: 0;
+      }
     </style>
   </head>
   <body>
@@ -335,7 +356,7 @@
       style="background-image: url(cover_bg_3.jpg); color: white; position: relative"
       class="vh-100 d-flex justify-content-center align-items-center fade-in"
     >
-      <div class="container-fluid bg d-flex justify-content-center align-items-center">
+      <div class="container-fluid bg d-flex justify-content-center align-items-center come">
         <div style="font-family: poppins-medium, sans-serif" class="container text-center font-apple-system welcome">
           <h1 style="font-weight: 700; font-size: 50px; font-family: Kaushan Script, cursive">- Welcome To The Team -</h1>
         </div>
@@ -471,12 +492,20 @@
               </li>
             </ul>
           </div>
+
           <div style="text-align: justify" class="container isi">
             <p>
               Hello, everyone! I am a student of Universitas Negeri Medan (UNIMED), specifically in the Department of Computer Science,
               class of 2022. I am highly enthusiastic about pursuing a career in the field of IT and utilizing the knowledge I acquire on
               campus to achieve this goal.
             </p>
+          </div>
+          <div style="margin-top: 10px" class="contact">
+            <a href="https://www.facebook.com/glennkeltydavid.manurung"><img class="contact-logo" src="fb.png" alt="facebook-logo" /></a>
+            <a href="https://github.com/gkeltydm"><img class="contact-logo" src="github.png" alt="github-logo" /></a>
+            <a href="https://www.instagram.com/gkelty.dm/?utm_medium=copy_link"
+              ><img class="contact-logo" src="ig.png" alt="instagram-logo"
+            /></a>
           </div>
         </div>
       </div>
@@ -688,6 +717,19 @@
         </div>
         <div class="container">
           <img style="width: 300px; background-color: black" src="intan1.jpg" class="img-thumbnail" alt="..." />
+        </div>
+      </div>
+    </div>
+
+    <div id="fh5co-footer" class="fade-in">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              &copy; 2023 Kelompok 3 <br />Designed by
+              <a href="#glenn">Glenn Kelty David Manurung</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
