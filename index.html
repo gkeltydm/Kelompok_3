@@ -20,9 +20,12 @@
       rel="stylesheet"
     />
     <style>
+      html {
+        overflow-x: hidden !important;
+      }
       body {
         scroll-behavior: smooth;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
         box-sizing: border-box;
       }
       * {
@@ -164,29 +167,20 @@
         }
       }
       @media screen and (max-width: 425px) {
-        #home {
-          width: 100vh;
-        }
-        #about {
-          width: 110vh;
-        }
         .about-p-img .about-p p {
           padding-left: 100px;
           width: 585px;
         }
         .welcome h1 {
           font-size: 30px !important;
-          margin-left: -100px;
-        }
-
-        .about-us {
-          margin-left: -70px;
+          /* margin-left: -100px; */
         }
 
         .about-us .about-p-img .about-p p {
+          margin: 0;
+          padding: 0;
           font-size: 12px;
-          width: 480px;
-          margin-left: -50px;
+          width: 350px;
         }
 
         .about-p-img .about-img img {
@@ -228,33 +222,21 @@
 
         .welcome h1 {
           font-size: 30px !important;
-          margin-left: -150px;
-        }
-
-        .about-us {
-          margin-left: -100px;
         }
 
         .about-us .about-p-img .about-p p {
           font-size: 12px;
-          width: 425px;
-          margin-left: -15px;
+          width: 300px;
         }
       }
 
       @media screen and (max-width: 320px) {
         .welcome h1 {
           font-size: 26px !important;
-          margin-left: -210px;
         }
-
-        .about-us {
-          margin-left: -130px;
-        }
-
         .about-us .about-p-img .about-p p {
           font-size: 12px;
-          width: 400px;
+          width: 250px;
         }
       }
     </style>
@@ -273,9 +255,6 @@
           </li>
           <li class="nav-item">
             <a style="color: white" class="nav-link" href="#team">Team</a>
-          </li>
-          <li class="nav-item">
-            <a style="color: white" class="nav-link" href="#">contact</a>
           </li>
         </ul>
       </div>
